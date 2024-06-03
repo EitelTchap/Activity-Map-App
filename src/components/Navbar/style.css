@@ -1,0 +1,19 @@
+.logo {
+  width: 25%;
+  height: auto;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

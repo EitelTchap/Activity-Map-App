@@ -1,0 +1,19 @@
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .modal-body {
+    padding-top: 0;
+  }
+  
+#bigCardModalLabel {
+    font-size: 30px;
+}

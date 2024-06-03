@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|IBM+Plex+Sans:500&display=swap');
+
+:root {
+  --color-primary: #6B7A8F;
+  --color-secondary: #101118;
+  --color-accent: #1D1F2F;
+  --color-focus: #6D64F7;
+  --base-duration: 600ms;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: var(--color-secondary);
+}
+
+.slider-container {
+  position: relative;
+  height: 50vh !important; /* Reduce height by 25% */
+  width: 75% !important; /* Reduce width by 25% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-button-left {
+  right: 2px;
+}
+
+.slider-button-right {
+  left: 2px;
+}
+
+.slider-card {
+  width: 75%; /* Reduce width by 25% */
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 0.125rem;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem 2.5rem 1.125rem;
+  text-align: center;
+  display: inline-block;
+  margin: 1rem 0;
+  transition: var(--base-duration);
+}
+
+.btn:focus {
+  outline-color: var(--color-focus);
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.visuallyhidden { 
+  clip: rect(1px, 1px, 1px, 1px);  
+  height: 1px; 
+  overflow: hidden;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
